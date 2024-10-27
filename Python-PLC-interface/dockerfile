@@ -1,0 +1,20 @@
+# Usa uma imagem base do Python para Raspberry Pi (ARM)
+FROM arm32v7/python:3.9-slim
+
+# Definir o diretório de trabalho dentro do container
+WORKDIR /app
+
+# Copiar o arquivo requirements.txt para o diretório de trabalho
+COPY requirements.txt ./
+
+# Instalar as dependências do projeto
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copiar todos os arquivos do diretório local para o container
+COPY . .
+
+# Expor a porta necessária, se houver uma (caso o seu código utilize HTTP ou outra comunicação)
+# EXPOSE 5000 
+
+# Comando padrão para rodar o script
+CMD ["python", "publish_info.py"]
