@@ -2,7 +2,6 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=React&message=library&color=blue&style=for-the-badge&logo=react"/>
   <img src="https://img.shields.io/static/v1?label=Vercel&message=hosting&color=black&style=for-the-badge&logo=vercel"/>
-  <img src="https://img.shields.io/static/v1?label=SuperViz&message=real-time&color=red&style=for-the-badge&logo=none"/>
 </p>
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=Node.js&message=runtime&color=green&style=for-the-badge&logo=node.js"/>
