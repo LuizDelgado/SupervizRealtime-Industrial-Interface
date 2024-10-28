@@ -113,15 +113,15 @@ This project is actively being developed as a proof of concept, with upcoming im
 
 1. Clone the project repository:
 
-   bash
+   ```bash
    git clone https://github.com/LuizDelgado/SupervizRealtime-Industrial-Interface.git
-   
+   ```
 
 2. Move into the project directory:
 
-   bash
+   ```bash
    cd SupervizRealtime-Industrial-Interface
-   
+   ```
 
 ### Backend Setup
 
@@ -129,27 +129,27 @@ This project is actively being developed as a proof of concept, with upcoming im
 
 1. Navigate to the backend folder:
 
-   bash
+   ```bash
    cd backend
-   
+   ```
 
 2. Copy the environment configuration file and set it up with necessary credentials:
 
-   bash
+   ```bash
    cp .env.example .env
-   
+   ```
 
 3. Install dependencies:
 
-   bash
+   ```bash
    npm install
-   
+   ```
 
 4. Start the Docker container on Raspberry Pi:
 
-   bash
+   ```bash
    docker-compose up
-   
+   ```
 
 5. Ensure the Raspberry Pi is connected to the Festo industrial plant and receiving data via pymodbus.
 
@@ -157,15 +157,15 @@ This project is actively being developed as a proof of concept, with upcoming im
 
 1. Navigate to the Node.js backend folder:
 
-   bash
+   ```bash
    cd backend/nodejs
-   
+   ```
 
 2. Install dependencies:
 
-   bash
+   ```bash
    npm install
-   
+   ```
 
 3. Set up the environment variables for MongoDB, SuperViz, and Gemini in the .env file.
 
@@ -173,21 +173,21 @@ This project is actively being developed as a proof of concept, with upcoming im
 
 1. Navigate to the frontend directory:
 
-   bash
+   ```bash
    cd ../frontend
-   
+   ```
 
 2. Install dependencies:
 
-   bash
+   ```bash
    npm install
-   
+   ```
 
 3. Start the development server:
 
-   bash
+   ```bash
    npm start
-   
+   ```
 
 ---
 
@@ -197,20 +197,21 @@ After completing the installation steps, run both backends and the frontend simu
 
 ### Backend (Raspberry Pi)
 
-bash
+```bash
 cd backend && docker-compose up
-
+```
 
 ### Backend (Node.js)
 
-bash
+```bash
 cd backend/nodejs && npm start
-
+```
 
 ### Frontend
 
-bash
+```bash
 cd frontend && npm start
+```
 
 
 The frontend should now be accessible on your local server (e.g., http://localhost:3000), displaying real-time data from the Festo plant through the SuperViz-powered pipeline.
